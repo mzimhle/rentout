@@ -1,0 +1,26 @@
+[05-Jan-2015 15:59:47 Africa/Johannesburg] PHP Warning:  require_once(config/database.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/rentoutco/public_admin/brand/view/default.php on line 4
+[05-Jan-2015 15:59:47 Africa/Johannesburg] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'config/database.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rentoutco/public_admin/brand/view/default.php on line 4
+[05-Jan-2015 15:59:57 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "participant/brand/view/default.tpl" in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[05-Jan-2015 16:39:56 Africa/Johannesburg] PHP Fatal error:  Call to undefined method class_brand::createFile() in /home/rentoutco/public_admin/brand/view/details.php on line 82
+[05-Jan-2015 16:40:33 Africa/Johannesburg] PHP Fatal error:  Call to undefined method class_brand::getRandomFileName() in /home/rentoutco/public_admin/brand/view/details.php on line 82
+[09-Jan-2015 20:12:49 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'feature.car_code' in 'on clause'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `feature...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `feature...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `feature...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/feature.php(49): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/car/feature/default.php(49): class_feature->getAll( in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[10-Jan-2015 00:43:58 Africa/Johannesburg] PHP Fatal error:  Smarty error: [in car/feature/details.tpl line 50]: [plugin] modifier 'uncache_image' is not implemented (core.load_plugins.php, line 118) in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[10-Jan-2015 00:44:29 Africa/Johannesburg] PHP Fatal error:  Smarty error: [in car/feature/details.tpl line 50]: [plugin] modifier 'uncache_image' is not implemented (core.load_plugins.php, line 118) in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[10-Jan-2015 01:02:58 Africa/Johannesburg] PHP Fatal error:  Call to a member function file_extention() on a non-object in /home/rentoutco/public_admin/car/feature/details.php on line 49
+[19-Jan-2015 14:50:37 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : Duplicate entry '' for key 'PRIMARY'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Abstract->query('INSERT INTO `fe...', Array)
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Table/Abstract.php(1053): Zend_Db_Adapter_Abstract->insert('feature', Array)
+#4 /home/rentoutco/public_html/library/classes/class/feature.php(29): Zend_Db_Table_Abstract->insert(Array)
+#5 /home/rentoutco/public_admin/car/feature/details.php(92): class_feature->insert(Array)
+#6 {main}
+  thrown in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214

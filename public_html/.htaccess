@@ -1,0 +1,29 @@
+RewriteEngine On
+
+RewriteBase /
+
+DirectoryIndex index.php default.php
+
+ErrorDocument 400     /index.php
+ErrorDocument 401     /index.php
+ErrorDocument 403     /index.php
+ErrorDocument 404     /index.php
+ErrorDocument 500     /index.php
+
+Options Includes FollowSymLinks MultiViews
+
+############################################################## WEBSITE DOMAIN
+
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+############################################################## DOWNLOAD SITE FILES
+
+RewriteRule ^download/([^/\.]+)/([^/\.]+)/?$											library/download.php?type=$1&code=$2						[QSA,L]
+RewriteRule ^image/([^/\.]+)/([0-9]+)/([^/\.]+)/([^/\.]+)\.([a-z]{3})$	library/image.php?type=$1&code=$2&imagesize=$3&hash=$4	[QSA,L]
+
+############################################################## MAILERS
+
+RewriteRule ^mailer/view/([^/\.]+)/?$			templates/mail/view.php?code=$1			[QSA,L]
+RewriteRule ^mailer/tracking/([^/\.]+)/?$		templates/mail/tracking.php?tracking=$1	[QSA,L]
+RewriteRule ^mailer/activate/([^/\.]+)/?$		templates/mail/activate.php?code=$1	[QSA,L]

@@ -1,0 +1,127 @@
+[15-Jul-2014 13:21:34 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : No data supplied for parameters in prepared statement' in /home/bizloung/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/bizloung/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/bizloung/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/bizloung/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /home/bizloung/public_html/library/classes/class/participant.php(135): Zend_Db_Adapter_Abstract->fetchRow(Object(Zend_Db_Select))
+#4 /home/bizloung/public_html/library/classes/class/participant.php(63): class_participant->getByCode(NULL)
+#5 /home/bizloung/public_html/administration/participants/view/details.php(98): class_participant->update(Array, 'participant_cod...')
+#6 {main}
+  thrown in /home/bizloung/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214
+[04-Jan-2015 21:48:34 Africa/Johannesburg] PHP Warning:  require_once(administration/includes/auth.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/rentoutco/public_admin/participant/view/default.php on line 13
+[04-Jan-2015 21:48:34 Africa/Johannesburg] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'administration/includes/auth.php' (include_path='/home/rentoutco/public_admin/:/home/rentoutco/public_admin/library/classes/') in /home/rentoutco/public_admin/participant/view/default.php on line 13
+[04-Jan-2015 21:51:24 Africa/Johannesburg] PHP Warning:  require_once(File.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/rentoutco/public_admin/library/classes/class/participant.php on line 6
+[04-Jan-2015 21:51:24 Africa/Johannesburg] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'File.php' (include_path='/home/rentoutco/public_admin/:/home/rentoutco/public_admin/library/classes/') in /home/rentoutco/public_admin/library/classes/class/participant.php on line 6
+[04-Jan-2015 21:51:37 Africa/Johannesburg] PHP Warning:  require_once(File.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/rentoutco/public_admin/library/classes/class/participant.php on line 6
+[04-Jan-2015 21:51:37 Africa/Johannesburg] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'File.php' (include_path='/home/rentoutco/public_admin/:/home/rentoutco/public_admin/library/classes/') in /home/rentoutco/public_admin/library/classes/class/participant.php on line 6
+[04-Jan-2015 22:19:14 Africa/Johannesburg] PHP Fatal error:  Smarty error: [in participant/view/details.tpl line 82]: syntax error: unexpected {else} (Smarty_Compiler.class.php, line 478) in /home/rentoutco/public_admin/library/classes/smarty/Smarty.class.php on line 1095
+[04-Jan-2015 22:19:19 Africa/Johannesburg] PHP Fatal error:  Smarty error: [in participant/view/details.tpl line 82]: syntax error: unexpected {else} (Smarty_Compiler.class.php, line 478) in /home/rentoutco/public_admin/library/classes/smarty/Smarty.class.php on line 1095
+[04-Jan-2015 22:35:27 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected '}' in /home/rentoutco/public_admin/participant/view/details.php on line 155
+[04-Jan-2015 23:52:52 Africa/Johannesburg] PHP Warning:  require_once(config/database.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/rentoutco/public_admin/participant/view/details.php on line 4
+[04-Jan-2015 23:52:52 Africa/Johannesburg] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'config/database.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rentoutco/public_admin/participant/view/details.php on line 4
+[05-Jan-2015 00:18:37 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "templates/mail/registration_email_verify.html" in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[05-Jan-2015 00:18:37 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : Column 'mailinglist_code' cannot be null' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Abstract->query('INSERT INTO `_c...', Array)
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Table/Abstract.php(1053): Zend_Db_Adapter_Abstract->insert('_comm', Array)
+#4 /home/rentoutco/public_html/library/classes/class/_comm.php(22): Zend_Db_Table_Abstract->insert(Array)
+#5 /home/rentoutco/public_html/library/classes/class/_comm.php(108): class_comm->insert(Array)
+#6 /home/rentoutco/public_html/library/classes/class/participant.php(81): class in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214
+[05-Jan-2015 00:20:22 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "templates/mail/registration_email_verify.html" in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[05-Jan-2015 00:20:22 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : Column 'mailinglist_code' cannot be null' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Abstract->query('INSERT INTO `_c...', Array)
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Table/Abstract.php(1053): Zend_Db_Adapter_Abstract->insert('_comm', Array)
+#4 /home/rentoutco/public_html/library/classes/class/_comm.php(22): Zend_Db_Table_Abstract->insert(Array)
+#5 /home/rentoutco/public_html/library/classes/class/_comm.php(108): class_comm->insert(Array)
+#6 /home/rentoutco/public_html/library/classes/class/participant.php(81): class in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214
+[05-Jan-2015 00:27:42 Africa/Johannesburg] PHP Warning:  Missing argument 2 for Zend_Db_Select::joinLeft(), called in /home/rentoutco/public_html/library/classes/class/participantlogin.php on line 282 and defined in /home/rentoutco/public_html/library/classes/Zend/Db/Select.php on line 355
+[05-Jan-2015 00:27:42 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE (participantlogin_deleted = 0 and participant_deleted = 0) AND (participan' at line 4' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `partici...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `partici...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `partici...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/lib in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[05-Jan-2015 11:11:51 Africa/Johannesburg] PHP Fatal error:  Call to undefined method File::getValidateExtention() in /home/rentoutco/public_admin/participant/view/details.php on line 118
+[05-Jan-2015 11:18:52 Africa/Johannesburg] PHP Warning:  mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Permission denied in /home/rentoutco/public_admin/participant/view/details.php on line 184
+[05-Jan-2015 11:18:52 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'File not writeable: /media/participant/39469789635343838262/logo//min_1420449532.jpg' in /home/rentoutco/public_html/library/classes/phpThumb/GdThumb.inc.php:662
+Stack trace:
+#0 /home/rentoutco/public_admin/participant/view/details.php(193): GdThumb->save('/media/particip...')
+#1 {main}
+  thrown in /home/rentoutco/public_html/library/classes/phpThumb/GdThumb.inc.php on line 662
+[05-Jan-2015 11:22:26 Africa/Johannesburg] PHP Warning:  mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Permission denied in /home/rentoutco/public_admin/participant/view/details.php on line 184
+[05-Jan-2015 11:22:26 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'File not writeable: /media/participant/39469789635343838262/logo/min_1420449746.jpg' in /home/rentoutco/public_html/library/classes/phpThumb/GdThumb.inc.php:662
+Stack trace:
+#0 /home/rentoutco/public_admin/participant/view/details.php(193): GdThumb->save('/media/particip...')
+#1 {main}
+  thrown in /home/rentoutco/public_html/library/classes/phpThumb/GdThumb.inc.php on line 662
+[05-Jan-2015 13:02:44 Africa/Johannesburg] PHP Warning:  require_once(config/database.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/rentoutco/public_admin/participant/view/login.php on line 3
+[05-Jan-2015 13:02:44 Africa/Johannesburg] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'config/database.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rentoutco/public_admin/participant/view/login.php on line 3
+[05-Jan-2015 14:18:17 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : No data supplied for parameters in prepared statement' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /home/rentoutco/public_html/library/classes/class/participantlogin.php(269): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#4 /home/rentoutco/public_admin/participant/view/login.php(33): class_participantlogin->getByParticipant('394697896353438...')
+#5 {main}
+  thrown in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214
+[05-Jan-2015 14:18:24 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : No data supplied for parameters in prepared statement' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /home/rentoutco/public_html/library/classes/class/participantlogin.php(269): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#4 /home/rentoutco/public_admin/participant/view/login.php(33): class_participantlogin->getByParticipant('394697896353438...')
+#5 {main}
+  thrown in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214
+[05-Jan-2015 14:20:24 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : No data supplied for parameters in prepared statement' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /home/rentoutco/public_html/library/classes/class/participantlogin.php(269): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#4 /home/rentoutco/public_admin/participant/view/login.php(33): class_participantlogin->getByParticipant('394697896353438...')
+#5 {main}
+  thrown in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214
+[08-Jan-2015 06:36:36 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "templates/mail/register_verify_email.html.html" in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[08-Jan-2015 06:46:58 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "templates/mail/register_verify_email.html.html" in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[08-Jan-2015 06:48:11 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "templates/mail/register_verify_email.html.html" in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[11-Jan-2015 22:02:52 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "templates/mail/register_verify_email.html.html" in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[11-Jan-2015 22:02:53 Africa/Johannesburg] PHP Catchable fatal error:  Argument 2 passed to class_mailinglist::updateMailinglist() must be an array, boolean given, called in /home/rentoutco/public_html/library/classes/class/participant.php on line 152 and defined in /home/rentoutco/public_html/library/classes/class/mailinglist.php on line 56
+[11-Jan-2015 22:17:23 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting ']' in /home/rentoutco/public_admin/participant/view/details.php on line 154
+[11-Jan-2015 22:18:58 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "templates/mail/register_verify_email.html.html" in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[11-Jan-2015 22:18:58 Africa/Johannesburg] PHP Catchable fatal error:  Argument 2 passed to class_mailinglist::updateMailinglist() must be an array, boolean given, called in /home/rentoutco/public_html/library/classes/class/participant.php on line 153 and defined in /home/rentoutco/public_html/library/classes/class/mailinglist.php on line 56
+[11-Jan-2015 22:30:42 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "templates/mail/register_verify_email.html.html" in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[11-Jan-2015 22:30:43 Africa/Johannesburg] PHP Catchable fatal error:  Argument 2 passed to class_mailinglist::updateMailinglist() must be an array, boolean given, called in /home/rentoutco/public_html/library/classes/class/participant.php on line 153 and defined in /home/rentoutco/public_html/library/classes/class/mailinglist.php on line 56
+[11-Jan-2015 22:35:11 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "templates/mail/register_verify_email.html.html" in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[11-Jan-2015 22:39:08 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "templates/mail/register_verify_email.html.html" in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[11-Jan-2015 22:39:08 Africa/Johannesburg] PHP Catchable fatal error:  Argument 2 passed to class_mailinglist::updateMailinglist() must be an array, boolean given, called in /home/rentoutco/public_html/library/classes/class/participant.php on line 153 and defined in /home/rentoutco/public_html/library/classes/class/mailinglist.php on line 56
+[11-Jan-2015 22:41:38 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "templates/mail/register_verify_email.html.html" in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[11-Jan-2015 23:02:15 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "templates/mail/register_verify_email.html.html" in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[12-Jan-2015 19:51:46 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "templates/mail/register_verify_email.html.html" in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[12-Jan-2015 19:59:45 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected T_ECHO in /home/rentoutco/public_html/library/classes/class/participant.php on line 20
+[12-Jan-2015 21:50:19 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : Column 'mailinglist_code' cannot be null' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Abstract->query('INSERT INTO `_c...', Array)
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Table/Abstract.php(1053): Zend_Db_Adapter_Abstract->insert('_comm', Array)
+#4 /home/rentoutco/public_html/library/classes/class/_comm.php(22): Zend_Db_Table_Abstract->insert(Array)
+#5 /home/rentoutco/public_html/library/classes/class/_comm.php(122): class_comm->insert(Array)
+#6 /home/rentoutco/public_html/library/classes/class/participant.php(81): class in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214
+[13-Jan-2015 00:24:40 Africa/Johannesburg] PHP Fatal error:  Smarty error: [in participant/view/default.tpl line 52]: syntax error: unrecognized tag 'image' (Smarty_Compiler.class.php, line 590) in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[13-Jan-2015 00:26:41 Africa/Johannesburg] PHP Fatal error:  Smarty error: [in participant/view/details.tpl line 92]: syntax error: unrecognized tag 'image' (Smarty_Compiler.class.php, line 590) in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[29-Jan-2015 07:51:12 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'participant_type' in 'field list'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('UPDATE `partici...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'UPDATE `partici...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('UPDATE `partici...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(604): Zend_Db_Adapter_Abstract->query('UPDATE `partici...', Array)
+#4 /home/rentoutco/public_html/library/classes/Zend/Db/Table/Abstract.php(1110): Zend_Db_Adapter_Abstract->update('participant', Array, 'participant_cod...')
+#5 /home/rentoutco/public_html/library/classes/class/pa in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77

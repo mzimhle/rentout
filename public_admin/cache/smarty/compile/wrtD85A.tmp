@@ -1,0 +1,283 @@
+<?php /* Smarty version 2.6.20, created on 2014-09-07 09:05:14
+         compiled from default.tpl */ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business Lounge - Tenders, Trade Leads, Business Listings and Jobs</title>
+<meta name="keywords" content="business, tenders, business listings, entrepreneurs, jobs">
+<meta name="description" content="Business Lounge offers business opportunities to corporates, entrepreneurs and SME’s from South Africa. Covering tenders, trade leads, business listings, jobs and more prospects to grow your business...">          
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="21 days">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta property="og:title" content="Business Lounge"> 
+<meta property="og:image" content="http://www.bizlounge.co.za/images/logo.png"> 
+<meta property="og:url" content="http://www.bizlounge.co.za">
+<meta property="og:site_name" content="Business Lounge">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Business Lounge offers business opportunities to corporates, entrepreneurs and SME’s from South Africa. Covering tenders, trade leads, business listings, jobs and more prospects to grow your business.">
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+<link rel="stylesheet" type="text/css" href="css/fontawesome/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/responsive-nav.css">
+<!--[if lt IE 9]>
+<script src="library/javascript/html5shiv.js"></script>
+<script src="library/javascript/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<?php require_once(SMARTY_CORE_DIR . 'core.smarty_include_php.php');
+smarty_core_smarty_include_php(array('smarty_file' => 'includes/header.php', 'smarty_assign' => '', 'smarty_once' => false, 'smarty_include_vars' => array()), $this); ?>
+
+<?php require_once(SMARTY_CORE_DIR . 'core.smarty_include_php.php');
+smarty_core_smarty_include_php(array('smarty_file' => 'includes/menu.php', 'smarty_assign' => '', 'smarty_once' => false, 'smarty_include_vars' => array()), $this); ?>
+
+<?php require_once(SMARTY_CORE_DIR . 'core.smarty_include_php.php');
+smarty_core_smarty_include_php(array('smarty_file' => 'includes/header-form.php', 'smarty_assign' => '', 'smarty_once' => false, 'smarty_include_vars' => array()), $this); ?>
+
+<section class="container">
+	<div class="row">
+    	<div class="col-xs-12 col-md-8 db-gutter-right">
+        	<!-- /// TENDER BOX /// -->
+			<div class="tenderbox eachbox">
+				<div class="titles htitle">
+					<div class="mainsearch minisearch">
+						<form action="" id="tensearch">
+							<input type="text" name="tesearch" class="tesearch" value="Search Tenders" /><input type="submit" value="search" />
+							<a href="#" class="rssicon">Tenders RSS Feed</a>
+						</form>
+					</div>
+					<h1>Latest Tenders</h1>
+				</div>
+				<dl class="cf">
+					<dt><a href="/tenders/details.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></dt>
+					<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere nisi lorem, vel faucibus metus luctus venenatis...</dd>
+					<dd class="iconbox"><span class="minicons pdate">September, 05</span><span class="minicons edate">December, 05</span></dd>
+				</dl>
+				<dl class="cf">
+					<dt><a href="/tenders/details.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></dt>
+					<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere nisi lorem, vel faucibus metus luctus venenatis...</dd>
+					<dd class="iconbox"><span class="minicons pdate">September, 05</span><span class="minicons edate">December, 05</span></dd>
+				</dl>
+				<dl class="cf">
+					<dt><a href="/tenders/details.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></dt>
+					<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere nisi lorem, vel faucibus metus luctus venenatis...</dd>
+					<dd class="iconbox"><span class="minicons pdate">September, 05</span><span class="minicons edate">December, 05</span></dd>
+				</dl>
+				<dl class="cf">
+					<dt><a href="/tenders/details.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></dt>
+					<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere nisi lorem, vel faucibus metus luctus venenatis...</dd>
+					<dd class="iconbox"><span class="minicons pdate">September, 05</span><span class="minicons edate">December, 05</span></dd>
+				</dl>
+				<dl class="cf">
+					<dt><a href="/tenders/details.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></dt>
+					<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere nisi lorem, vel faucibus metus luctus venenatis...</dd>
+					<dd class="iconbox"><span class="minicons pdate">September, 05</span><span class="minicons edate">December, 05</span></dd>
+				</dl>
+			</div>
+        </div>
+        <div class="col-xs-12 col-md-4 no-gutter-left">
+        	<!-- /// NEWS BOX /// -->
+			<div class="newsbox eachbox no-gutter-left">
+				<div class="titles stitle">
+					<a href="#" class="rssicon nrss">News RSS Feed</a>
+					<h4>Latest Articles</h4>
+				</div>
+				<div class="newscont cf">
+                	<div class="fnewsimg"><img src="/images/news_img.jpg" alt="News Article" /></div>
+					<dl class="news cf">
+						<dt><a href="/articles/details.php">Lorem ipsum dolor sit amet, consectetur adipising elit maecenas ultrices eu rhoncus</a></dt>
+						<dd class="iconbox nicons"><span class="minicons pdate">September, 05</span><span class="minicons ncom">No Comments</span></dd>
+						<dd class="introtxt"><p>Proin ac placerat turpis. Nullam sodales orci eget nisl lobortis, nec imperdiet diam iaculis. Donec at sodales eros. Etiam iaculis aliquam orci, eget rhoncus est faucibus a. Ut neque eget augue iaculis scelerisque. Nam sed fermentum odio proin ac placerat turpis orci eget nisl lobortis...</p></dd>
+					</dl>
+				</div>
+			</div>
+        </div>	
+    </div>
+</section>
+<section class="container">
+	<div class="row">
+    	<div class="col-xs-12 col-md-8 db-gutter-right">
+        	<!-- /// TRADE LEADS BOX /// -->
+			<div class="tradebox eachbox">
+				<div class="titles htitle">
+					<div class="mainsearch minisearch">
+						<form action="" id="tradesearch">
+							<input type="text" name"trsearch" class="trsearch" value="Search Trade Leads" /><input type="submit" value="search" />
+							<a href="#" class="rssicon">Trade Leads RSS Feed</a>
+						</form>
+					</div>
+					<h2>Latest Trades</h2>
+				</div>
+				<dl class="cf">
+					<dt><a href="/trade-leads/details.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></dt>
+					<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere nisi lorem, vel faucibus metus luctus venenatis...</dd>
+					<dd class="iconbox"><span class="minicons pdate">September, 05</span></dd>
+				</dl>
+				<dl class="cf">
+					<dt><a href="/trade-leads/details.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></dt>
+					<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere nisi lorem, vel faucibus metus luctus venenatis...</dd>
+					<dd class="iconbox"><span class="minicons pdate">September, 05</span></dd>
+				</dl>
+				<dl class="cf">
+					<dt><a href="/trade-leads/details.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></dt>
+					<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere nisi lorem, vel faucibus metus luctus venenatis...</dd>
+					<dd class="iconbox"><span class="minicons pdate">September, 05</span></dd>
+				</dl>
+				<dl class="cf">
+					<dt><a href="/trade-leads/details.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></dt>
+					<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere nisi lorem, vel faucibus metus luctus venenatis...</dd>
+					<dd class="iconbox"><span class="minicons pdate">September, 05</span></dd>
+				</dl>
+				<dl class="cf">
+					<dt><a href="/trade-leads/details.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></dt>
+					<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere nisi lorem, vel faucibus metus luctus venenatis...</dd>
+					<dd class="iconbox"><span class="minicons pdate">September, 05</span></dd>
+				</dl>
+			</div>
+            <!-- /// JOBS BOX /// -->
+			<div class="jobbox eachbox">
+				<div class="titles htitle">
+					<div class="mainsearch minisearch">
+						<form action="" id="tradesearch">
+							<input type="text" name"josearch" class="josearch" value="Search Jobs" /><input type="submit" value="search" />
+							<a href="#" class="rssicon">Jobs RSS Feed</a>
+						</form>
+					</div>
+					<h3>Latest Jobs</h3>
+				</div>
+				<div class="joblist1 cf">
+					<dl class="cf">
+						<dd class="jobicon"><span class="jobdate">&nbsp;</span>September, 05</dd>
+						<dt><a href="/jobs/details.php">Job Heading/Title</a></dt>
+						<dd><em>City:</em> Cape Town</dd>
+						<dd><em>Company:</em> Brand Inc International</dd>
+					</dl>
+					<dl class="cf">
+						<dd class="jobicon"><span class="jobdate">&nbsp;</span>September, 05</dd>
+						<dt><a href="/jobs/details.php">Job Heading/Title</a></dt>
+						<dd><em>City:</em> Cape Town</dd>
+						<dd><em>Company:</em> Brand Inc International</dd>
+					</dl>
+					<dl class="cf">
+						<dd class="jobicon"><span class="jobdate">&nbsp;</span>September, 05</dd>
+						<dt><a href="/jobs/details.php">Job Heading/Title</a></dt>
+						<dd><em>City:</em> Cape Town</dd>
+						<dd><em>Company:</em> Brand Inc International</dd>
+					</dl>
+					<dl class="cf">
+						<dd class="jobicon"><span class="jobdate">&nbsp;</span>September, 05</dd>
+						<dt><a href="/jobs/details.php">Job Heading/Title</a></dt>
+						<dd><em>City:</em> Cape Town</dd>
+						<dd><em>Company:</em> Brand Inc International</dd>
+					</dl>
+				</div>
+				<div class="joblist2 cf">
+					<dl class="cf">
+						<dd class="jobicon"><span class="jobdate">&nbsp;</span>September, 05</dd>
+						<dt><a href="/jobs/details.php">Job Heading/Title</a></dt>
+						<dd><em>City:</em> Cape Town</dd>
+						<dd><em>Company:</em> Brand Inc International</dd>
+					</dl>
+					<dl class="cf">
+						<dd class="jobicon"><span class="jobdate">&nbsp;</span>September, 05</dd>
+						<dt><a href="/jobs/details.php">Job Heading/Title</a></dt>
+						<dd><em>City:</em> Cape Town</dd>
+						<dd><em>Company:</em> Brand Inc International</dd>
+					</dl>
+					<dl class="cf">
+						<dd class="jobicon"><span class="jobdate">&nbsp;</span>September, 05</dd>
+						<dt><a href="/jobs/details.php">Job Heading/Title</a></dt>
+						<dd><em>City:</em> Cape Town</dd>
+						<dd><em>Company:</em> Brand Inc International</dd>
+					</dl>
+					<dl class="cf">
+						<dd class="jobicon"><span class="jobdate">&nbsp;</span>September, 05</dd>
+						<dt><a href="/jobs/details.php">Job Heading/Title</a></dt>
+						<dd><em>City:</em> Cape Town</dd>
+						<dd><em>Company:</em> Brand Inc International</dd>
+					</dl>
+				</div>
+			</div>
+        </div>
+        <div class="col-xs-12 col-md-4 no-gutter-left">
+        	<!-- /// LISTINGS BOX /// -->
+			<div div class="blistbox eachbox no-gutter-left">
+				<div class="titles stitle">
+					<h4>Latest Business Listings</h4>
+				</div>
+				<div class="blistcont">
+					<div class="bfeatbox">
+						<a href="/companies/details.php"><img src="/images/feat_bus_logo.gif" alt="Company Logo" /></a>
+						<p><a href="/companies/details.php">Willow-Neticca</a></p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at neque ac mauris volutpat dignissim eu id mi. Aenean semper at neque ac mauris volutpat...</p>
+					</div>
+					<dl class="blist cf">
+						<img src="/images/bus_img.png" alt="Company name" />
+						<dt><a href="/companies/details.php">Company Name Pty(Ltd)</a></dt>
+						<dd class="introtxt">Proin ac placerat turpis. Nullam sodales orci eget nisl lobortis, nec at neque ac mauris volutpat...</dd>
+					</dl>
+					<dl class="blist cf">
+						<img src="/images/bus_img.png" alt="Company name" />
+						<dt><a href="/companies/details.php">Company Name Pty(Ltd)</a></dt>
+						<dd class="introtxt">Proin ac placerat turpis. Nullam sodales orci eget nisl lobortis, nec at neque ac mauris volutpat...</dd>
+					</dl>
+					<dl class="blist cf">
+						<img src="/images/bus_img.png" alt="Company name" />
+						<dt><a href="/companies/details.php">Company Name Pty(Ltd)</a></dt>
+						<dd class="introtxt">Proin ac placerat turpis. Nullam sodales orci eget nisl lobortis, nec at neque ac mauris volutpat...</dd>
+					</dl>
+					<dl class="blist cf">
+						<img src="/images/bus_img.png" alt="Company name" />
+						<dt><a href="/companies/details.php">Company Name Pty(Ltd)</a></dt>
+						<dd class="introtxt">Proin ac placerat turpis. Nullam sodales orci eget nisl lobortis, nec at neque ac mauris volutpat...</dd>
+					</dl>
+				</div>
+			</div>
+        	<!-- /// ADVERT BOX /// -->
+			<div class="adbox eachbox visible-md visible-lg">
+				<a href="#"><img src="/images/jobs_ad.jpg" alt="Advert" /></a>
+			</div>
+		</div>
+    </div>
+</section>
+<?php require_once(SMARTY_CORE_DIR . 'core.smarty_include_php.php');
+smarty_core_smarty_include_php(array('smarty_file' => 'includes/footer.php', 'smarty_assign' => '', 'smarty_once' => false, 'smarty_include_vars' => array()), $this); ?>
+
+<?php echo '
+<script>
+	var navigation = responsiveNav(".mainnav");
+	
+  	$(function () {
+    	$(\'#intabs a:first\').tab(\'show\')
+  })
+// Tab-Pane change function
+var tabChange = function(){
+    var tabs = $(\'#intabs ul > li\');
+    var active = tabs.filter(\'.active\');
+    var next = active.next(\'li\').length? active.next(\'li\').find(\'a\') : tabs.filter(\':first-child\').find(\'a\');
+    // Use the Bootsrap tab show method
+    next.tab(\'show\')
+}
+// Tab Cycle function
+var tabCycle = setInterval(tabChange, 5000)
+// Tab click event handler
+$(this).find(\'#intabs a\').click(function(e) {
+    e.preventDefault();
+    // Stop the cycle
+    clearInterval(tabCycle);
+    // Show the clicked tabs associated tab-pane
+    $(this).tab(\'show\')
+    // Start the cycle again in a predefined amount of time
+    setTimeout(function(){
+        tabCycle = setInterval(tabChange, 25000);
+    }, 25000);
+});
+</script>
+'; ?>
+
+</body>
+</html>

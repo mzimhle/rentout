@@ -1,0 +1,236 @@
+[05-Jan-2015 15:59:47 Africa/Johannesburg] PHP Warning:  require_once(config/database.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/rentoutco/public_admin/brand/view/default.php on line 4
+[05-Jan-2015 15:59:47 Africa/Johannesburg] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'config/database.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rentoutco/public_admin/brand/view/default.php on line 4
+[05-Jan-2015 15:59:57 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "participant/brand/view/default.tpl" in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[05-Jan-2015 16:39:56 Africa/Johannesburg] PHP Fatal error:  Call to undefined method class_brand::createFile() in /home/rentoutco/public_admin/brand/view/details.php on line 82
+[05-Jan-2015 16:40:33 Africa/Johannesburg] PHP Fatal error:  Call to undefined method class_brand::getRandomFileName() in /home/rentoutco/public_admin/brand/view/details.php on line 82
+[05-Jan-2015 23:13:14 Africa/Johannesburg] PHP Warning:  require_once(class/car.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/rentoutco/public_admin/car/view/default.php on line 14
+[05-Jan-2015 23:13:14 Africa/Johannesburg] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'class/car.php' (include_path='/home/rentoutco/public_admin:/home/rentoutco/public_html/library/classes:/home/rentoutco/public_html') in /home/rentoutco/public_admin/car/view/default.php on line 14
+[05-Jan-2015 23:45:36 Africa/Johannesburg] PHP Warning:  require_once(class/car.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/rentoutco/public_admin/car/view/default.php on line 14
+[05-Jan-2015 23:45:36 Africa/Johannesburg] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'class/car.php' (include_path='/home/rentoutco/public_admin:/home/rentoutco/public_html/library/classes:/home/rentoutco/public_html') in /home/rentoutco/public_admin/car/view/default.php on line 14
+[05-Jan-2015 23:46:14 Africa/Johannesburg] PHP Warning:  require_once(class/car.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/rentoutco/public_admin/car/view/default.php on line 14
+[05-Jan-2015 23:46:14 Africa/Johannesburg] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'class/car.php' (include_path='/home/rentoutco/public_admin:/home/rentoutco/public_html/library/classes:/home/rentoutco/public_html') in /home/rentoutco/public_admin/car/view/default.php on line 14
+[06-Jan-2015 00:31:00 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'car.image_code' in 'on clause'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `car`.*,...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `car`.*,...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `car`.*,...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/car.php(62): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/car/view/default.php(49): class_car->getAll('car_deleted  in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[06-Jan-2015 00:57:45 Africa/Johannesburg] PHP Fatal error:  Call to undefined method class_make::getByMake() in /home/rentoutco/public_admin/car/view/details.php on line 74
+[06-Jan-2015 16:02:47 Africa/Johannesburg] PHP Fatal error:  Call to undefined method class_image::createReference() in /home/rentoutco/public_admin/car/view/image.php on line 164
+[06-Jan-2015 16:03:37 Africa/Johannesburg] PHP Fatal error:  Call to undefined method class_image::createReference() in /home/rentoutco/public_admin/car/view/image.php on line 164
+[06-Jan-2015 16:10:19 Africa/Johannesburg] PHP Fatal error:  Call to a member function getPrimaryByCar() on a non-object in /home/rentoutco/public_html/library/classes/class/image.php on line 30
+[06-Jan-2015 16:10:35 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'image_filename' in 'field list'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('INSERT INTO `im...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'INSERT INTO `im...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('INSERT INTO `im...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Abstract->query('INSERT INTO `im...', Array)
+#4 /home/rentoutco/public_html/library/classes/Zend/Db/Table/Abstract.php(1053): Zend_Db_Adapter_Abstract->insert('image', Array)
+#5 /home/rentoutco/public_html/library/classes/class/image.php(38): Zend_Db_Table_Abs in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[06-Jan-2015 23:02:53 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'image.car_code' in 'on clause'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `car`.*,...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `car`.*,...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `car`.*,...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/car.php(90): Zend_Db_Adapter_Abstract->fetchRow(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/car/view/image.php(26): class_car->getByCode('3341495224' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[06-Jan-2015 23:09:41 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'image.car_code' in 'on clause'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `car`.*,...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `car`.*,...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `car`.*,...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/car.php(90): Zend_Db_Adapter_Abstract->fetchRow(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/car/view/image.php(26): class_car->getByCode('3341495224' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[06-Jan-2015 23:10:13 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'image.car_code' in 'on clause'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `car`.*,...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `car`.*,...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `car`.*,...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/car.php(90): Zend_Db_Adapter_Abstract->fetchRow(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/car/view/image.php(26): class_car->getByCode('3341495224' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[06-Jan-2015 23:11:09 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'image.car_code' in 'on clause'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `car`.*,...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `car`.*,...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `car`.*,...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/car.php(90): Zend_Db_Adapter_Abstract->fetchRow(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/car/view/image.php(26): class_car->getByCode('3341495224' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[06-Jan-2015 23:15:32 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'car.car_deleted = 0) ORDER BY `image_added` DESC LIMIT 1' at line 2' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `image`....')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `image`....')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `image`....')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/image in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[06-Jan-2015 23:16:28 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : No data supplied for parameters in prepared statement' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /home/rentoutco/public_html/library/classes/class/image.php(105): Zend_Db_Adapter_Abstract->fetchRow(Object(Zend_Db_Select))
+#4 /home/rentoutco/public_html/library/classes/class/image.php(30): class_image->getPrimaryByItem(NULL, 'CAR')
+#5 /home/rentoutco/public_admin/car/view/image.php(191): class_image->insert(Array)
+#6 {main}
+  thrown in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214
+[06-Jan-2015 23:17:55 Africa/Johannesburg] PHP Warning:  require_once(config/database.asset-registry.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/rentoutco/public_admin/car/view/mileage.php on line 8
+[06-Jan-2015 23:17:55 Africa/Johannesburg] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'config/database.asset-registry.php' (include_path='/home/rentoutco/public_admin/:/home/rentoutco/public_admin/library/classes/') in /home/rentoutco/public_admin/car/view/mileage.php on line 8
+[07-Jan-2015 00:48:58 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected '/' in /home/rentoutco/public_html/library/classes/class/mileage.php on line 3
+[07-Jan-2015 00:49:14 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected '/', expecting T_FUNCTION in /home/rentoutco/public_html/library/classes/class/mileage.php on line 6
+[07-Jan-2015 00:50:08 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "/car/view/costs.tpl" in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[07-Jan-2015 00:50:25 Africa/Johannesburg] PHP Warning:  Smarty error: file:administration/includes/footer.php is not readable in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[07-Jan-2015 00:50:25 Africa/Johannesburg] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Filename cannot be empty in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1925
+[07-Jan-2015 00:50:25 Africa/Johannesburg] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Filename cannot be empty in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1925
+[07-Jan-2015 00:50:25 Africa/Johannesburg] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/home/rentoutco/public_admin:/home/rentoutco/public_html/library/classes:/home/rentoutco/public_html') in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1925
+[07-Jan-2015 00:53:15 Africa/Johannesburg] PHP Warning:  Smarty error: file:administration/includes/footer.php is not readable in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[07-Jan-2015 00:53:15 Africa/Johannesburg] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Filename cannot be empty in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1925
+[07-Jan-2015 00:53:15 Africa/Johannesburg] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Filename cannot be empty in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1925
+[07-Jan-2015 00:53:15 Africa/Johannesburg] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/home/rentoutco/public_admin:/home/rentoutco/public_html/library/classes:/home/rentoutco/public_html') in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1925
+[07-Jan-2015 00:54:05 Africa/Johannesburg] PHP Warning:  Smarty error: file:administration/includes/footer.php is not readable in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[07-Jan-2015 00:54:05 Africa/Johannesburg] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Filename cannot be empty in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1925
+[07-Jan-2015 00:54:05 Africa/Johannesburg] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Filename cannot be empty in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1925
+[07-Jan-2015 00:54:05 Africa/Johannesburg] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/home/rentoutco/public_admin:/home/rentoutco/public_html/library/classes:/home/rentoutco/public_html') in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1925
+[07-Jan-2015 07:07:53 Africa/Johannesburg] PHP Warning:  Smarty error: file:administration/includes/footer.php is not readable in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[07-Jan-2015 07:07:53 Africa/Johannesburg] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Filename cannot be empty in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1925
+[07-Jan-2015 07:07:53 Africa/Johannesburg] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Filename cannot be empty in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1925
+[07-Jan-2015 07:07:53 Africa/Johannesburg] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/home/rentoutco/public_admin:/home/rentoutco/public_html/library/classes:/home/rentoutco/public_html') in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1925
+[07-Jan-2015 07:19:05 Africa/Johannesburg] PHP Warning:  Smarty error: file:administration/includes/footer.php is not readable in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[07-Jan-2015 07:19:05 Africa/Johannesburg] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Filename cannot be empty in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1925
+[07-Jan-2015 07:19:05 Africa/Johannesburg] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Filename cannot be empty in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1925
+[07-Jan-2015 07:19:05 Africa/Johannesburg] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/home/rentoutco/public_admin:/home/rentoutco/public_html/library/classes:/home/rentoutco/public_html') in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1925
+[07-Jan-2015 07:24:33 Africa/Johannesburg] PHP Warning:  Smarty error: file:administration/includes/footer.php is not readable in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[07-Jan-2015 07:24:33 Africa/Johannesburg] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Filename cannot be empty in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1925
+[07-Jan-2015 07:24:33 Africa/Johannesburg] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Filename cannot be empty in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1925
+[07-Jan-2015 07:24:33 Africa/Johannesburg] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/home/rentoutco/public_admin:/home/rentoutco/public_html/library/classes:/home/rentoutco/public_html') in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1925
+[07-Jan-2015 13:44:56 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'mileagetype_unit' in 'where clause'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `mileage...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `mileage...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `mileage...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(782): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/mileagetype.php(72): Zend_Db_Adapter_Abstract->fetchPairs(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/car/view/mileage.php(174): class_mileagety in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[07-Jan-2015 13:52:00 Africa/Johannesburg] PHP Fatal error:  Smarty error: [in car/view/mileage.tpl line 59]: syntax error: unrecognized tag: $smarty.now|date_format::"%A, %B %e, %Y" (Smarty_Compiler.class.php, line 446) in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[07-Jan-2015 17:16:45 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Query was empty' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare(NULL)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), NULL)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare(NULL)
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(NULL, Array)
+#4 /home/rentoutco/public_html/library/classes/class/image.php(87): Zend_Db_Adapter_Abstract->fetchAll(NULL)
+#5 /home/rentoutco/public_admin/car/view/mileage.php(42): class_image->getByItem('625232554765925', 'MILEAGE')
+#6 {main}
+  thrown in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[07-Jan-2015 17:17:14 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Query was empty' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare(NULL)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), NULL)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare(NULL)
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(NULL, Array)
+#4 /home/rentoutco/public_html/library/classes/class/image.php(87): Zend_Db_Adapter_Abstract->fetchAll(NULL)
+#5 /home/rentoutco/public_admin/car/view/mileage.php(42): class_image->getByItem('625232554765925', 'MILEAGE')
+#6 {main}
+  thrown in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[07-Jan-2015 17:17:18 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Query was empty' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare(NULL)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), NULL)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare(NULL)
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(NULL, Array)
+#4 /home/rentoutco/public_html/library/classes/class/image.php(87): Zend_Db_Adapter_Abstract->fetchAll(NULL)
+#5 /home/rentoutco/public_admin/car/view/mileage.php(42): class_image->getByItem('625232554765925', 'MILEAGE')
+#6 {main}
+  thrown in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[07-Jan-2015 17:19:18 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Query was empty' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare(NULL)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), NULL)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare(NULL)
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(NULL, Array)
+#4 /home/rentoutco/public_html/library/classes/class/image.php(87): Zend_Db_Adapter_Abstract->fetchAll(NULL)
+#5 /home/rentoutco/public_admin/car/view/mileage.php(42): class_image->getByItem('625232554765925', 'MILEAGE')
+#6 {main}
+  thrown in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[09-Jan-2015 20:09:34 Africa/Johannesburg] PHP Fatal error:  Call to undefined method class_feature::getByItem() in /home/rentoutco/public_admin/car/view/feature.php on line 30
+[10-Jan-2015 01:18:47 Africa/Johannesburg] PHP Fatal error:  Call to undefined method class_feature::getByItem() in /home/rentoutco/public_admin/car/view/feature.php on line 30
+[10-Jan-2015 01:57:05 Africa/Johannesburg] PHP Warning:  require_once(class/carfeature.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/rentoutco/public_admin/car/view/feature.php on line 16
+[10-Jan-2015 01:57:05 Africa/Johannesburg] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'class/carfeature.php' (include_path='/home/rentoutco/public_admin:/home/rentoutco/public_html/library/classes:/home/rentoutco/public_html') in /home/rentoutco/public_admin/car/view/feature.php on line 16
+[10-Jan-2015 02:07:08 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'feature_deleted = 0) AND (carfeature.car_code = '3341495224')' at line 3' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `carfeat...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `carfeat...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `carfeat...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/ in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[10-Jan-2015 11:58:37 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'group_deleted' in 'where clause'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `car`.*,...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `car`.*,...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `car`.*,...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/car.php(61): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/car/view/default.php(49): class_car->getAll('car_delete in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[28-Jan-2015 23:01:28 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Table 'rentoutc_db.colour' doesn't exist' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `car`.*,...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `car`.*,...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `car`.*,...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/car.php(63): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/car/view/default.php(49): class_car->getAll('car_deleted = 0',  in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[28-Jan-2015 23:01:29 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Table 'rentoutc_db.colour' doesn't exist' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `car`.*,...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `car`.*,...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `car`.*,...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/car.php(63): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/car/view/default.php(49): class_car->getAll('car_deleted = 0',  in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[29-Jan-2015 07:57:34 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Table 'rentoutc_db.colour' doesn't exist' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `car`.*,...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `car`.*,...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `car`.*,...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/car.php(63): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/car/view/default.php(49): class_car->getAll('car_deleted = 0',  in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[29-Jan-2015 07:59:22 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'colour_deleted' in 'where clause'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `car`.*,...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `car`.*,...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `car`.*,...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/car.php(61): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/car/view/default.php(49): class_car->getAll('car_delet in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[29-Jan-2015 08:05:01 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'car.car_seats' in 'field list'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `car`.`c...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `car`.`c...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `car`.`c...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/car.php(87): Zend_Db_Adapter_Abstract->fetchRow(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/car/view/details.php(32): class_car->getByCode('742942879 in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[29-Jan-2015 08:05:46 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Table 'rentoutc_db.colour' doesn't exist' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `colour`...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `colour`...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `colour`...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(782): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/colour.php(71): Zend_Db_Adapter_Abstract->fetchPairs(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/car/view/details.php(93): class_colour->pairs()
+#6 {main}
+ in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[29-Jan-2015 08:19:41 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected T_IF, expecting T_STRING in /home/rentoutco/public_admin/car/view/details.php on line 145
+[29-Jan-2015 13:56:14 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'price.prie_enddate' in 'where clause'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `car`.*,...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `car`.*,...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `car`.*,...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/car.php(62): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/car/view/default.php(49): class_car->getAll('car_d in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77

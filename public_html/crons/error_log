@@ -1,0 +1,87 @@
+[14-Jan-2015 21:24:58 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected ')' in /home/rentoutco/public_html/crons/brand.php on line 1011
+[14-Jan-2015 21:34:19 Africa/Johannesburg] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rentoutco/public_html/crons/brand.php on line 1018
+[14-Jan-2015 21:34:54 Africa/Johannesburg] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rentoutco/public_html/crons/brand.php on line 1023
+[14-Jan-2015 21:40:35 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'make_country' in 'field list'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('INSERT INTO `br...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'INSERT INTO `br...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('INSERT INTO `br...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Abstract->query('INSERT INTO `br...', Array)
+#4 /home/rentoutco/public_html/library/classes/Zend/Db/Table/Abstract.php(1053): Zend_Db_Adapter_Abstract->insert('brand', Array)
+#5 /home/rentoutco/public_html/library/classes/class/brand.php(29): Zend_Db_Table_Abstr in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[15-Jan-2015 00:07:39 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'brand.brand_code' in 'group statement'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `make`.*...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `make`.*...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `make`.*...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/make.php(122): Zend_Db_Adapter_Abstract->fetchRow(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_html/crons/model.php(87): class_make->getWithOutModel in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[15-Jan-2015 09:31:29 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : Duplicate entry '' for key 'PRIMARY'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Abstract->query('INSERT INTO `ma...', Array)
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Table/Abstract.php(1053): Zend_Db_Adapter_Abstract->insert('make', Array)
+#4 /home/rentoutco/public_html/library/classes/class/make.php(29): Zend_Db_Table_Abstract->insert(Array)
+#5 /home/rentoutco/public_html/crons/make.php(116): class_make->insert(Array)
+#6 {main}
+  thrown in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214
+[15-Jan-2015 09:35:22 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : Duplicate entry '' for key 'PRIMARY'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Abstract->query('INSERT INTO `ma...', Array)
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Table/Abstract.php(1053): Zend_Db_Adapter_Abstract->insert('make', Array)
+#4 /home/rentoutco/public_html/library/classes/class/make.php(29): Zend_Db_Table_Abstract->insert(Array)
+#5 /home/rentoutco/public_html/crons/make.php(116): class_make->insert(Array)
+#6 {main}
+  thrown in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214
+[15-Jan-2015 09:38:02 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : Duplicate entry '' for key 'PRIMARY'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Abstract->query('INSERT INTO `ma...', Array)
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Table/Abstract.php(1053): Zend_Db_Adapter_Abstract->insert('make', Array)
+#4 /home/rentoutco/public_html/library/classes/class/make.php(29): Zend_Db_Table_Abstract->insert(Array)
+#5 /home/rentoutco/public_html/crons/make.php(116): class_make->insert(Array)
+#6 {main}
+  thrown in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214
+[21-Feb-2015 21:57:33 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : Query execution was interrupted' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /home/rentoutco/public_html/library/classes/class/make.php(126): Zend_Db_Adapter_Abstract->fetchRow(Object(Zend_Db_Select))
+#4 /home/rentoutco/public_html/crons/model.php(87): class_make->getWithOutModels()
+#5 {main}
+  thrown in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214
+[21-Feb-2015 21:57:33 Africa/Johannesburg] PHP Warning:  Unknown: Error occured while closing statement in Unknown on line 0
+[05-Mar-2015 23:07:04 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : Query execution was interrupted' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /home/rentoutco/public_html/library/classes/class/make.php(126): Zend_Db_Adapter_Abstract->fetchRow(Object(Zend_Db_Select))
+#4 /home/rentoutco/public_html/crons/model.php(87): class_make->getWithOutModels()
+#5 {main}
+  thrown in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214
+[05-Mar-2015 23:07:04 Africa/Johannesburg] PHP Warning:  Unknown: Error occured while closing statement in Unknown on line 0
+[28-Apr-2015 12:41:22 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : Query execution was interrupted' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /home/rentoutco/public_html/library/classes/class/make.php(126): Zend_Db_Adapter_Abstract->fetchRow(Object(Zend_Db_Select))
+#4 /home/rentoutco/public_html/crons/model.php(87): class_make->getWithOutModels()
+#5 {main}
+  thrown in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214
+[28-Apr-2015 12:41:22 Africa/Johannesburg] PHP Warning:  Unknown: Error occured while closing statement in Unknown on line 0
+[16-May-2015 06:10:02 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Adapter_Mysqli_Exception' with message 'Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)' in /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php:333
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(448): Zend_Db_Adapter_Mysqli->_connect()
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#2 /home/rentoutco/public_html/library/classes/class/make.php(126): Zend_Db_Adapter_Abstract->fetchRow(Object(Zend_Db_Select))
+#3 /home/rentoutco/public_html/crons/model.php(87): class_make->getWithOutModels()
+#4 {main}
+  thrown in /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php on line 333

@@ -1,0 +1,27 @@
+[27-Jan-2015 22:00:02 Africa/Johannesburg] PHP Fatal error:  Smarty error: [in default.tpl line 224]: syntax error: unrecognized tag: $('#edate').countdown('2015/02/14', function(event) {
+            $(this).html(event.strftime(''
+            + '<div class="count-item"><div class="count-num">%w</div><div class="count-txt up-txt">Weeks</div></div>'
+            + '<div class="count-item"><div class="count-num">%d</div><div class="count-txt up-txt">Days</div></div>'
+            + '<div class="count-item"><div class="count-num">%H</div><div class="count-txt up-txt">Hours</div></div>'
+            + '<div class="count-item"><div class="count-num">%M</div><div class="count-txt up-txt">Minutes</div></div>'
+            /*+ '<div class="count-item"><div class="count-num">%S</div><div class="count-txt up-txt">Seconds</div></div>'*/)); (Smarty_Compiler.class.php, line 446) in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[28-Jan-2015 21:47:52 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/rentoutco/public_html/default.php on line 102
+[28-Jan-2015 21:48:10 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected '<' in /home/rentoutco/public_html/default.php on line 102
+[28-Jan-2015 22:05:12 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected $end in /home/rentoutco/public_html/default.php on line 106
+[28-Jan-2015 22:17:15 Africa/Johannesburg] PHP Fatal error:  Call to a member function validateEmail() on a non-object in /home/rentoutco/public_html/default.php on line 48
+[28-Jan-2015 22:18:25 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'participant_type' in 'field list'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('INSERT INTO `pa...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'INSERT INTO `pa...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('INSERT INTO `pa...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Abstract->query('INSERT INTO `pa...', Array)
+#4 /home/rentoutco/public_html/library/classes/Zend/Db/Table/Abstract.php(1053): Zend_Db_Adapter_Abstract->insert('participant', Array)
+#5 /home/rentoutco/public_html/library/classes/class/participant.php(40): Zen in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[28-Jan-2015 22:20:06 Africa/Johannesburg] PHP Warning:  mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Permission denied in /home/rentoutco/public_html/default.php on line 186
+[28-Jan-2015 22:20:06 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'File not writeable: /media/image/car/5656984877/326183156548636/min_1422476406.jpg' in /home/rentoutco/public_html/library/classes/phpThumb/GdThumb.inc.php:662
+Stack trace:
+#0 /home/rentoutco/public_html/default.php(196): GdThumb->save('/media/image/ca...')
+#1 {main}
+  thrown in /home/rentoutco/public_html/library/classes/phpThumb/GdThumb.inc.php on line 662
+[29-Jan-2015 10:57:40 Africa/Johannesburg] PHP Fatal error:  Call to undefined method class_image::file_extention() in /home/rentoutco/public_html/default.php on line 120
+[05-Feb-2015 19:37:27 Africa/Johannesburg] PHP Fatal error:  Smarty error: [in /home/rentoutco/public_html/templates/register/register_email.html line 7]: syntax error: unrecognized tag: padding:0; (Smarty_Compiler.class.php, line 446) in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095

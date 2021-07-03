@@ -1,0 +1,59 @@
+[28-Jan-2015 19:28:48 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Incorrect parameter count in the call to native function 'LOCATE'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `model`....')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `model`....')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `model`....')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/model.php(112): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_html/feeds/car.php(21): class_model->sear in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[28-Jan-2015 19:29:01 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'car.car_code' in 'group statement'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `model`....')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `model`....')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `model`....')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/model.php(112): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_html/feeds/car.php(21): class_model->search('mer', 20)
+# in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[28-Jan-2015 21:01:15 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/rentoutco/public_html/library/classes/class/model.php on line 107
+[28-Jan-2015 21:01:17 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/rentoutco/public_html/library/classes/class/model.php on line 107
+[28-Jan-2015 21:01:18 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/rentoutco/public_html/library/classes/class/model.php on line 107
+[28-Jan-2015 21:06:57 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')) like lower('%200%')) ORDER BY LOCATE('200', brand_name) ASC LIMIT 20' at line 3' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `model`....')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `model`....')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `model`....')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/clas in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[28-Jan-2015 21:06:58 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')) like lower('%2007%')) ORDER BY LOCATE('2007', brand_name) ASC LIMIT 20' at line 3' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `model`....')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `model`....')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `model`....')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/cl in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[28-Jan-2015 21:07:07 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')) like lower('%2007%')) ORDER BY LOCATE('2007', brand_name) ASC LIMIT 20' at line 3' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `model`....')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `model`....')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `model`....')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/cl in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[12-Feb-2015 09:35:43 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Incorrect parameter count in the call to native function 'lower'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `model`....')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `model`....')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `model`....')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/model.php(133): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_html/feeds/model.php(31): class_model->sea in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[12-Feb-2015 09:39:12 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected T_FOR in /home/rentoutco/public_html/library/classes/class/model.php on line 131
+[12-Feb-2015 09:39:29 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Incorrect parameter count in the call to native function 'lower'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `model`....')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `model`....')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `model`....')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/model.php(136): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_html/feeds/model.php(31): class_model->sea in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[12-Feb-2015 09:42:14 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected T_OBJECT_OPERATOR in /home/rentoutco/public_html/library/classes/class/model.php on line 138

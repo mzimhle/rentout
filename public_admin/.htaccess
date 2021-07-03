@@ -1,0 +1,27 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+RewriteBase /
+
+DirectoryIndex index.php default.php
+Options -Indexes
+Options Includes FollowSymLinks MultiViews
+
+ErrorDocument 400 /error/
+ErrorDocument 401 /error/
+ErrorDocument 402 /error/
+ErrorDocument 403 /error/
+ErrorDocument 404 /error/
+ErrorDocument 405 /error/
+ErrorDocument 406 /error/
+ErrorDocument 407 /error/
+ErrorDocument 408 /error/
+ErrorDocument 409 /error/
+ErrorDocument 500 /error/
+
+############################# Mailers
+
+RewriteRule ^mailers/view/([^/\.]+)/?$						mailers/view.php?code=$1				[QSA,L]
+RewriteRule ^mailers/unsubscribe/([^/\.]+)/?$			mailers/unsubscribe.php?code=$1	[QSA,L]
+RewriteRule ^mailers/tracking/([^/\.]+)/?$					mailers/tracking.php?tracking=$1	[QSA,L]

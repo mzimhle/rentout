@@ -1,0 +1,14 @@
+[05-Jan-2015 15:59:47 Africa/Johannesburg] PHP Warning:  require_once(config/database.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/rentoutco/public_admin/brand/view/default.php on line 4
+[05-Jan-2015 15:59:47 Africa/Johannesburg] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'config/database.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rentoutco/public_admin/brand/view/default.php on line 4
+[05-Jan-2015 15:59:57 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "participant/brand/view/default.tpl" in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[05-Jan-2015 16:39:56 Africa/Johannesburg] PHP Fatal error:  Call to undefined method class_brand::createFile() in /home/rentoutco/public_admin/brand/view/details.php on line 82
+[05-Jan-2015 16:40:33 Africa/Johannesburg] PHP Fatal error:  Call to undefined method class_brand::getRandomFileName() in /home/rentoutco/public_admin/brand/view/details.php on line 82
+[05-Jan-2015 18:10:15 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'model_image_name' in 'field list'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('UPDATE `model` ...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'UPDATE `model` ...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('UPDATE `model` ...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(604): Zend_Db_Adapter_Abstract->query('UPDATE `model` ...', Array)
+#4 /home/rentoutco/public_html/library/classes/Zend/Db/Table/Abstract.php(1110): Zend_Db_Adapter_Abstract->update('model', Array, 'model_code = '7...')
+#5 /home/rentoutco/public_html/library/classes/class/model.ph in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[28-Jan-2015 19:19:57 Africa/Johannesburg] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 82 bytes) in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 304

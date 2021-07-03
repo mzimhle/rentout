@@ -1,0 +1,95 @@
+@media (min-width: 768px){
+    .home-logo-box img{
+        width: 36%;
+        max-width: 330px;
+        margin-bottom: 35px;
+    }
+    .home-nav{
+        margin-top: 19%;
+    }
+}
+
+@media (min-width: 992px){
+    .left-box{
+        height: 100%;
+        min-height: 100vh;
+        border-right: 26px solid #084d5f;
+        position: fixed;
+        overflow-x: hidden;
+        width: 57.5%;
+    }
+    .home-nav{
+        margin-top: 30%;
+    }
+    .home-nav ul li a{
+        font-size: 16px;
+        padding: 21px 18px 20px 10px;
+    }
+    .info-img img{
+        width: 110%;
+        max-width: 71px;
+    }
+    .home-logo-box{
+        padding-top: 14%;
+        margin-bottom: 0;
+    }
+    .home-logo-box img{
+        width: 50%;
+        max-width: 330px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px){
+    .right-box{
+        min-height: 95vh;
+        background: #207792;
+        width: 140%;
+    }
+}
+
+@media (min-width: 1200px){
+    .home-logo-box img{
+        width: 100%;
+        max-width: 330px;
+    }
+    .home-nav ul li a{
+        font-size: 18px;
+        padding: 19px 18px 20px 10px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .left-box{
+        overflow: hidden;
+        margin-left: -15px;
+        width: 106%;
+    }
+    footer{
+        font-size: 14px;
+        color: #FFF;
+        margin-bottom: 10px;
+        bottom: 0;
+        position: relative;
+        margin-top: -50px;
+    }
+    footer a{
+        font-size: 18px;
+        color: #1a7994;
+        display: block;
+        font-weight: bold;
+        background: #d3e271;
+        padding: 10px 0 10px 15px;
+        margin-bottom: 6px;
+    }
+    footer a:hover{
+        color: #1a7994;
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 480px) and (orientation: landscape){
+    .left-box{
+        width: 107%;
+        border-right: 0;
+    }
+}

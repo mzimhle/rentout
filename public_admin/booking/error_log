@@ -1,0 +1,62 @@
+[11-Jan-2015 16:39:40 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'Session must be started before any output has been sent to the browser; output started in /home/rentoutco/public_admin/booking/default.php/6' in /home/rentoutco/public_html/library/classes/Zend/Session.php:454
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Session/Namespace.php(143): Zend_Session::start(true)
+#1 /home/rentoutco/public_admin/includes/auth.php(13): Zend_Session_Namespace->__construct('BackendLogin')
+#2 /home/rentoutco/public_admin/booking/default.php(10): require_once('/home/rentoutco...')
+#3 {main}
+  thrown in /home/rentoutco/public_html/library/classes/Zend/Session.php on line 454
+[11-Jan-2015 16:40:12 Africa/Johannesburg] PHP Warning:  require_once(config/database.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/rentoutco/public_admin/booking/default.php on line 4
+[11-Jan-2015 16:40:12 Africa/Johannesburg] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'config/database.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rentoutco/public_admin/booking/default.php on line 4
+[11-Jan-2015 16:40:42 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE in /home/rentoutco/public_admin/booking/default.php on line 8
+[11-Jan-2015 16:57:37 Africa/Johannesburg] PHP Fatal error:  Call to a member function getAll() on a non-object in /home/rentoutco/public_admin/booking/default.php on line 76
+[11-Jan-2015 17:06:46 Africa/Johannesburg] PHP Fatal error:  Class 'class_booking' not found in /home/rentoutco/public_admin/booking/default.php on line 14
+[11-Jan-2015 18:11:57 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected T_STRING in /home/rentoutco/public_admin/booking/confirmation.php on line 79
+[11-Jan-2015 21:05:24 Africa/Johannesburg] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 71 bytes) in /home/rentoutco/public_html/library/classes/Zend/Mail.php on line 577
+[11-Jan-2015 21:05:55 Africa/Johannesburg] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 71 bytes) in /home/rentoutco/public_html/library/classes/Zend/Mail.php on line 577
+[11-Jan-2015 21:08:43 Africa/Johannesburg] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 71 bytes) in /home/rentoutco/public_html/library/classes/Zend/Mail.php on line 577
+[11-Jan-2015 21:10:46 Africa/Johannesburg] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 71 bytes) in /home/rentoutco/public_html/library/classes/Zend/Mail.php on line 577
+[11-Jan-2015 21:19:40 Africa/Johannesburg] PHP Fatal error:  Class 'class_comm' not found in /home/rentoutco/public_admin/booking/confirmation.php on line 21
+[11-Jan-2015 21:21:07 Africa/Johannesburg] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 71 bytes) in /home/rentoutco/public_html/library/classes/Zend/Mail.php on line 577
+[14-Jan-2015 07:52:16 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Incorrect parameter count in the call to native function 'ISNULL'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `booking...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `booking...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `booking...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/booking.php(227): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/booking/default.php(76): class_bo in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[14-Jan-2015 07:52:51 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Incorrect parameter count in the call to native function 'ISNULL'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `booking...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `booking...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `booking...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/booking.php(227): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/booking/default.php(76): class_bo in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[14-Jan-2015 07:55:19 Africa/Johannesburg] PHP Warning:  Missing argument 1 for class_booking::createInvoice(), called in /home/rentoutco/public_html/library/classes/class/payment.php on line 39 and defined in /home/rentoutco/public_html/library/classes/class/booking.php on line 128
+[14-Jan-2015 07:55:19 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : No data supplied for parameters in prepared statement' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /home/rentoutco/public_html/library/classes/class/booking.php(199): Zend_Db_Adapter_Abstract->fetchRow(Object(Zend_Db_Select))
+#4 /home/rentoutco/public_html/library/classes/class/booking.php(132): class_booking->getByCode(NULL)
+#5 /home/rentoutco/public_html/library/classes/class/payment.php(39): class_booking->createInvoice()
+#6 /home/rentoutco/public_admin/booking/payment.php(132): clas in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214
+[28-Jan-2015 23:03:18 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Table 'rentoutc_db.colour' doesn't exist' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `booking...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `booking...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `booking...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/booking.php(227): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/booking/default.php(76): class_booking->getAll('booking_de in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77
+[05-Feb-2015 20:38:39 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/rentoutco/public_html/library/classes/class/notice.php on line 88
+[05-Feb-2015 20:38:55 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli prepare error: Unknown column 'booking.notice_code' in 'on clause'' in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:77
+Stack trace:
+#0 /home/rentoutco/public_html/library/classes/Zend/Db/Statement.php(115): Zend_Db_Statement_Mysqli->_prepare('SELECT `notice`...')
+#1 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Mysqli.php(381): Zend_Db_Statement->__construct(Object(Zend_Db_Adapter_Mysqli), 'SELECT `notice`...')
+#2 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(467): Zend_Db_Adapter_Mysqli->prepare('SELECT `notice`...')
+#3 /home/rentoutco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(706): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /home/rentoutco/public_html/library/classes/class/notice.php(88): Zend_Db_Adapter_Abstract->fetchAll(Object(Zend_Db_Select))
+#5 /home/rentoutco/public_admin/booking/confirmation.php(36): class_notice->getBy in /home/rentoutco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 77

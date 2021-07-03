@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://css-tricks.com/examples/EditableInvoice/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="http://www.rentout.co.za/templates/booking/invoice/css/style.css">
+	<link rel="stylesheet" href="http://www.rentout.co.za/templates/booking/invoice/css/print.css" media="print">
+	<link rel='stylesheet'  href="http://www.rentout.co.za/templates/booking/invoice/css/fonts.css" type='text/css' />
+</head>
+<body>
+	<div id="page-wrap">
+		<p id="header">INVOICE</p>
+		<div id="identity">
+            <p id="address">No. 234, Inkatha Business Place, Midrand, Johannesburg</p>
+		</div>
+		<div style="clear:both"></div>
+		<div id="identity">
+            <p id="address" style="width: 400px !important;">
+				<span id="customer-title">{$bookingData.participant_name} {$bookingData.participant_surname}</span><br /><br />
+				{$bookingData.participant_email} / {$bookingData.participant_cellphone}
+			</p>
+            <div class="logo">
+				<table width="320px">
+						<tr>
+							<td class="meta-head">Invoice #</td>
+							<td>{$bookingData.booking_reference}</td>
+						</tr>
+						{if $bookingData.payment_final lt 0 or $bookingData.payment_final eq 0}
+						<tr>
+							<td class="meta-head">Amount Due</td>
+							<td><div class="due">R {$bookingData.payment_final|number_format:2:".":","}</div></td>
+						</tr>					
+						{else}
+						<tr>
+							<td class="meta-head">Amount Owed to you</td>
+							<td><div class="due">R {$bookingData.payment_final|number_format:2:".":","}</div></td>
+						</tr>							
+						{/if}
+				</table>              
+            </div>
+		</div>
+		<table id="items">
+			<tr>
+				<th align="left" width="75%">Item</th>
+				<th width="left">Price</th>
+			</tr>
+			<tr class="item-row">
+				<td class="description">{$bookingData.car_year|date_format:"%Y"} {$bookingData.brand_name}, {$bookingData.make_name},  {$bookingData.model_name} with colour {$bookingData.colour_name} from {$bookingData.booking_startdate|date_format:"%A, %B %e, %Y"} till {$bookingData.booking_enddate|date_format:"%A, %B %e, %Y"} for {date_diff date1=$bookingData.booking_startdate date2=$bookingData.booking_enddate} days</td>
+				<td align="right">R {$bookingData.price_cost|number_format:2:".":","}</td>
+			</tr>
+			<tr class="item-row">
+				<td class="item-name">Vat (14%)</td>
+				<td align="right">R {$bookingData.price_vat|number_format:2:".":","}</td>
+			</tr>
+			<tr class="item-row">
+				<td class="item-name">Sub Total</td>
+				<td align="right">R {$bookingData.price_vat_total|number_format:2:".":","}</td>
+			</tr>			
+			<tr>
+				<th colspan="2" align="left">Payments</th>
+			</tr>				
+			{if isset($paymentData)}
+			{foreach from=$paymentData item=item}
+			<tr class="item-row">
+				<td align="left">{$item.payment_added|date_format:"%A, %B %e, %Y"}</td>
+				<td align="right">R {$item.payment_amount|number_format:2:".":","}</td>
+			</tr>
+			{/foreach}			
+			{else}
+			<tr class="item-row">
+				<td align="left" colspan="2">No payments made yet.</td>
+			</tr>			
+			{/if}		
+			<tr>
+				<th colspan="2" align="left">Final Total</th>
+			</tr>	
+			<tr class="item-row">
+				<td colspan="2" align="right">R {$bookingData.payment_final|number_format:2:".":","}</td>
+			</tr>			
+		</table>
+		<div id="terms">
+		  <p id="header">Payments Made To: </p>
+		  Account Holder: RentOut (PTY) LTD<br />
+		  Bank: Standard Bank<br />
+		  Account Number: 0705985614<br />
+		  Branch Code: 954125<br />
+		  <b>Reference: {$bookingData.booking_reference}</b>
+		  <br /><br />
+				No. 234, Inkatha Business Place, Midrand, Johannesburg			
+				<br />
+				tel: 0215896478 / fax: 0215745987 / email: info@rentout.co.za
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+[29-Jan-2015 00:03:13 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected ';' in /home/rentoutco/public_html/register/success.php on line 15
+[29-Jan-2015 00:03:43 Africa/Johannesburg] PHP Fatal error:  Call to undefined method class_participantlogin::getByHash() in /home/rentoutco/public_html/register/success.php on line 17
+[29-Jan-2015 07:36:03 Africa/Johannesburg] PHP Warning:  Smarty error: unable to read resource: "/templates/register/activate.html" in /home/rentoutco/public_html/library/classes/smarty/Smarty.class.php on line 1095
